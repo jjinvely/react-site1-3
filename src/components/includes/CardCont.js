@@ -21,7 +21,7 @@ import React from 'react'
 //   }
 // ]
 
-function CardInfo({title, desc, image, id}){
+function CardInfo({title, desc1, image, id}){
   return (
     <article className="card">
     <figure className="card__header">
@@ -30,7 +30,7 @@ function CardInfo({title, desc, image, id}){
     <div className="card__body">
       <h3 className="title">{title}</h3>
       <p className="desc">
-        {desc}
+        {desc1}
       </p>
       <a className="btn" href="/">
                 더 자세히 보기
@@ -58,7 +58,7 @@ function CardCont({CardText}) {
     <div>
         <section
         id="cardType"
-        className="card_wrap section nexon" >
+        className="card__wrap section nexon" >
         <h2>웹스토리보이 강의</h2>
         <p>
           웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.
@@ -70,7 +70,7 @@ function CardCont({CardText}) {
             <CardInfo 
             key={txt.id}
             title={txt.title}
-            desc={txt.desc}
+            desc1={txt.desc1}
             image={txt.image}/>
           ))}    
         </div>
