@@ -72,7 +72,7 @@ function CardCont({CardText}) {
             title={txt.title}
             desc={txt.desc}
             image={txt.image}/>
-          ))}      
+          ))}    
         </div>
       </section>
 
