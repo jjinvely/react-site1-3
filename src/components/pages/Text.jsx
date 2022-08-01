@@ -4,7 +4,6 @@ import TextCont from '../includes/TextCont'
 import Footer from '../layout/Footer';
 
 
-
 function Text() {
   const [textText, setText] = useState([]);
 
@@ -14,7 +13,7 @@ function Text() {
       redirect: "follow",
     };
     fetch(
-      "https://raw.githubusercontent.com/jjinvely/react-site1-3/main/src/assets/json/Text.json",requestOption
+      "https://github.com/jjinvely/react-site1-3/blob/main/src/assets/json/Text.json",requestOption
     )
     .then((response) => response.json())
     // .then((result) => {console.log(result);})
