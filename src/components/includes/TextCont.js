@@ -39,7 +39,7 @@ import React from 'react'
 //   }
 // ]
 
-function TextInfo({title,desc,image,id}){
+function TextInfo({title,desc,id}){
   return (
      <div className="text">
             <h3>{title}</h3>

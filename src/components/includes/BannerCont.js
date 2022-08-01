@@ -10,9 +10,9 @@ import React from 'react'
 // ]
 
 
-function BannerInfo({text, desc,link,span,id}){
+function BannerInfo({title, desc,link,span,id}){
   return <>
-  <h3 className="banner__title">{text}</h3>
+  <h3 className="banner__title">{title}</h3>
           <p className="banner__desc">
             {desc}
             <a href="/">{link}</a>
@@ -27,7 +27,7 @@ function BannerCont({BannerText}) {
     <div>
         <section
         id="bannerType"
-        className="banner__wrap">
+        className="banner__wrap section gmarket">
         <h2 className="ir_so">배너 영역</h2>
         <div className="banner__inner">
         {BannerText.map((txt) => (
