@@ -1,25 +1,25 @@
 import React from 'react'
 
-const CardText = [
-  {
-      title: "웹표준 사이트 만들기",
-      desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
-      image: "img/card_bg01.jpg",
-      id:"0"
-  },
-  {
-      title: "웹표준 사이트 만들기",
-      desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
-      image: "img/card_bg02.jpg",
-      id:"1"
-  },
-  {
-      title: "웹표준 사이트 만들기",
-      desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
-      image: "img/card_bg03.jpg",
-      id:"2"
-  }
-]
+// const CardText = [
+//   {
+//       title: "웹표준 사이트 만들기",
+//       desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
+//       image: "img/card_bg01.jpg",
+//       id:"0"
+//   },
+//   {
+//       title: "웹표준 사이트 만들기",
+//       desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
+//       image: "img/card_bg02.jpg",
+//       id:"1"
+//   },
+//   {
+//       title: "웹표준 사이트 만들기",
+//       desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
+//       image: "img/card_bg03.jpg",
+//       id:"2"
+//   }
+// ]
 
 function CardInfo({title, desc, image, id}){
   return (
@@ -53,13 +53,12 @@ function CardInfo({title, desc, image, id}){
 }
 
 
-function CardCont(props) {
+function CardCont() {
   return (
     <div>
         <section
         id="cardType"
-        className={`card_wrap ${props.skill[0]} ${props.skill[1]}`}
-      >
+        className="card_wrap" >
         <h2>웹스토리보이 강의</h2>
         <p>
           웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.
