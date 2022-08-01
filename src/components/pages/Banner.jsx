@@ -20,18 +20,15 @@ function Banner() {
 }, []);
 
 
-   
-  
-  
+       
   
   return (
     <>
     <Contents>
      <BannerCont BannerText={BannerText}/>
     </Contents>
-    </>
-  
-  );
+    </>  
+  )
 }
 
 export default Banner;
