@@ -1,6 +1,6 @@
 import React from 'react';
 import Contents from '../layout/Contents';
-import TextCont from '../includes/Main'
+import TextCont from '../includes/TextCont'
 import Footer from '../layout/Footer';
 
 function Text() {
