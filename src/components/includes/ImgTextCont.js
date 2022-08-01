@@ -29,7 +29,7 @@ function ImgInfo({small,title,desc,btn,id}){
 }
 
 
-function ImgTextCont() {
+function ImgTextCont({ImgText}) {
   return (
     <div>
       <section id="imgTextType" className="imgText__wrap section nexon gray">

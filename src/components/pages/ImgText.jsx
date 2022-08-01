@@ -4,7 +4,7 @@ import ImgTextCont from '../includes/ImgTextCont'
 
 
 
-function ImgText(props) {
+function ImgText() {
   const [ImgText, setImgText] = useState([]);
   
   useEffect(()=>{
@@ -13,7 +13,7 @@ function ImgText(props) {
       redirect: "follow",
     };
     fetch(
-      "https://raw.githubusercontent.com/jjinvely/react-site1-3/main/src/assets/json/ImgText.json",requestOption
+      "https://github.com/jjinvely/react-site1-3/blob/main/src/assets/json/ImgText.json",requestOption
     )
     .then((response) => response.json())
     // .then((result) => {console.log(result);})
