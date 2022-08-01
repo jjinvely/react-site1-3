@@ -6,7 +6,7 @@ import CardCont from '../includes/CardCont'
 
 
 function Card() {
-  const [Cards, setCards] = useState([]);
+  const [CardText, setCardText] = useState([]);
 
   useEffect(()=>{
     const requestOption = {
@@ -14,16 +14,16 @@ function Card() {
       redirect: "follow",
     };
     fetch(
-      "https://raw.githubusercontent.com/jjinvely/react-site1-3/main/src/assets/json/Card.json", requestOption
-    )..then((response) => response.json())
+      "https://github.com/jjinvely/react-site1-3/blob/main/src/assets/json/Card.json", requestOption
+    ).then((response) => response.json())
     // .then((result) => {console.log(result);})
-    .then((result) => {setCards(result.data.Cards)})
+    .then((result) => {setCardText(result.data.CardText)})
     .then((error) => console.log("error", error))
   })
   return (
     <>
         <Contents>
-        <CardCont Cards={Cards}/>
+        <CardCont CardText={CardText}/>
       </Contents>
     </>
   );

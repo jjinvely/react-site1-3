@@ -53,7 +53,7 @@ function CardInfo({title, desc, image, id}){
 }
 
 
-function CardCont() {
+function CardCont({CardText}) {
   return (
     <div>
         <section
