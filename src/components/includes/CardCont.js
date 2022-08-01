@@ -21,6 +21,8 @@ import React from 'react'
 //   }
 // ]
 
+
+
 function CardInfo({title, desc, image, id}){
   return (
     <article className="card">
@@ -66,7 +68,7 @@ function CardCont({CardText}) {
           Gmarket Sans Light 22px 150% #67778A
         </p>
         <div className="card__inner container">
-        {CardText.map((txt)=>(
+        {CardText && CardText.map((txt)=>(
             <CardInfo 
             key={txt.id}
             title={txt.title}
