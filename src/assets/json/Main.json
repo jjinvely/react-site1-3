@@ -1,7 +1,7 @@
-/*헤더영역*/
+
 
 {
-   "textInfor" = [
+   "textInfor" : [
     
   {"text": "헤더영역"},
   {"text": "슬라이드영역"},
@@ -11,8 +11,8 @@
 }
 
 
-/*슬라이더*/
-{"title" = [
+
+{"title" : [
   {"text1": "developer",
   "text2": "new frontend",
 "text3":"당신이 만들어갈 새로운 이야기<br /> 당신도 할 수 있습니다",
@@ -22,8 +22,8 @@
 }
 
 
-/*이미지*/
-{"ImageText" = [
+
+{"ImageText" : [
   {
    "title": "애교만점 웰시코기",
     "desc": "제목은 넥슨 풋볼 고딕 폰트입니다.<br/> 설명부분은 넥슨 LV1 고딕 16px 140% 입니다.",
@@ -37,8 +37,8 @@
 ]
 }
 
-/*이미지텍스트*/
-{"ImgText" = [
+
+{"ImgText" : [
   {   "small":"이미지/텍스트 유형",
       "title": "유용한 사이트<br/>살펴보기",
       "desc": " 사이트 제작에 있어 이미지와 텍스트를 혼합해서 사용하는 경우가 많다.<br/>기본 레이아웃은 동일하기 때문에 이미지나 배치에 따라서 느낌은 얼마든지 다르게 표현할 수 있다.<br/>Gmarket Sans 50px, Medium<br/>NEXON Lv1 Gothic 18px (153%)",
@@ -46,7 +46,7 @@
     }]
 }
 
-/*카드*/
+
 {
   "cardText": [
     {
@@ -71,7 +71,7 @@
 
 
 {
-"BannerTitle" = [
+"BannerTitle" : [
     {"text": "유튜버 웹보이"},
     {"desc": "더 다양한 강의는 유튜블 통해 제공하고 있습니다."},
     {"address":"youtube.com/c/Webstoryboy"},
@@ -79,7 +79,7 @@
   ]
   }
 
-/*텍스트*/
+
 {
   "textText": [
     {
@@ -120,8 +120,8 @@
 }
 
 
-/*footer*/
-{"menuList" =[
+
+{"menuList" : [
   {"text":"레이아웃유형",
   "menu1":"레이아웃유형01",
   "menu2":"레이아웃유형02",
