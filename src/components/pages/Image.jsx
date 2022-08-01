@@ -4,7 +4,6 @@ import ImageCont from '../includes/ImageCont';
 
 
 
-
 function Image() {
   const [ImageText, setImageText] = useState([]);
 
@@ -16,7 +15,7 @@ function Image() {
     fetch("https://raw.githubusercontent.com/jjinvely/react-site1-3/main/src/assets/json/Image.json",
     requestOption)
     .then((response) => response.json())
-    .then((result) => {console.log(result);})
+    // .then((result) => {console.log(result);})
     .then((result) => {setImageText(result.data.ImageText)})
     .then((error) => console.log("error", error))
 }, []);

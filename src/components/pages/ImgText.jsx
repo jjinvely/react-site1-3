@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import Contents from '../layout/Contents';
 import ImgTextCont from '../includes/ImgTextCont'
 
+
+
 function ImgText(props) {
+  const [ImgText, setImgText] = useState([]);
+  
+  useEffect(()=>{
+    const requestOption ={
+      method: "GET",
+      redirect: "follow",
+    };
+    fetch(
+      "https://raw.githubusercontent.com/jjinvely/react-site1-3/main/src/assets/json/ImgText.json",requestOption
+    )
+    .then((response) => response.json())
+    // .then((result) => {console.log(result);})
+    .then((result) => {setImgText(result.data.ImgText)})
+    .then((error) => console.log("error", error))
+}, []);
+   
   return (
     <>
     <Contents>
-      <ImgTextCont skill={['section', 'nexon', 'gray']}/>
+      <ImgTextCont skill={['section', 'nexon', 'gray']} ImgText={ImgText}/>
     </Contents>
     </>
   );
