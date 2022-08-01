@@ -1,8 +1,6 @@
 import React from 'react'
 
 
-
-
 // const BannerText= [
 //   {title: "유튜버 웹보이".
 //   desc: "더 다양한 강의는 유튜블 통해 제공하고 있습니다.".

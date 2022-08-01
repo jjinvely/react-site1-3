@@ -21,8 +21,6 @@ import React from 'react'
 //   }
 // ]
 
-
-
 function CardInfo({title, desc, image, id}){
   return (
     <article className="card">
@@ -60,7 +58,7 @@ function CardCont({CardText}) {
     <div>
         <section
         id="cardType"
-        className="card_wrap" >
+        className="card_wrap section nexon" >
         <h2>웹스토리보이 강의</h2>
         <p>
           웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.
