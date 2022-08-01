@@ -1,15 +1,14 @@
 import React from 'react'
 
 
-const title = [
-  {text1: "developer",
-  text2: "new frontend",
-text3:"당신이 만들어갈 새로운 이야기<br /> 당신도 할 수 있습니다",
-text4:"자세히보기",
-text5:"사이트보기"}
-]
+// const sliders = [
+//   {text1: "developer",
+//   text2: "new frontend",
+// text3:"당신이 만들어갈 새로운 이야기<br /> 당신도 할 수 있습니다",
+// id:"0"}
+// ]
 
-function Info({text1,text2,text3}){
+function Info({text1,text2,text3,id}){
   return <>
     <span>{text1}</span>
     <h3>{text2}</h3>
@@ -17,7 +16,7 @@ function Info({text1,text2,text3}){
   </>
 }
 
-function SliderCont() {
+function SliderCont({sliders}) {
   return (
     <div>
         <section
@@ -29,15 +28,13 @@ function SliderCont() {
           <div className="slider">
             <div className="slider__img">
               <div className="desc">
-              {title.map((txt)=>(
+              {sliders && sliders.map((txt)=>(
             <Info 
-            key={txt.text}
-            title={txt.text}
+            key={txt.id}
             text1={txt.text1}
             text2={txt.text2}
             text3={txt.text3}
-            text4={txt.text4}
-            text5={txt.text5}
+        
            />))}
                 <div className="btn">
                   <a href="/" className="white">

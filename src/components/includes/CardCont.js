@@ -4,21 +4,24 @@ const CardText = [
   {
       title: "웹표준 사이트 만들기",
       desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
-      image: "img/card_bg01.jpg"
+      image: "img/card_bg01.jpg",
+      id:"0"
   },
   {
       title: "웹표준 사이트 만들기",
       desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
-      image: "img/card_bg02.jpg"
+      image: "img/card_bg02.jpg",
+      id:"1"
   },
   {
       title: "웹표준 사이트 만들기",
       desc: "사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을 익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한 예제를 통해 사이트를 만드는 기본 강의입니다.",
-      image: "img/card_bg03.jpg"
+      image: "img/card_bg03.jpg",
+      id:"2"
   }
 ]
 
-function CardInfo({title, desc, image}){
+function CardInfo({title, desc, image, id}){
   return (
     <article className="card">
     <figure className="card__header">
@@ -66,7 +69,7 @@ function CardCont(props) {
         <div className="card__inner container">
         {CardText.map((txt)=>(
             <CardInfo 
-            key={txt.title}
+            key={txt.id}
             title={txt.title}
             desc={txt.desc}
             image={txt.image}/>
