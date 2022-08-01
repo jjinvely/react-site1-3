@@ -1,6 +1,10 @@
 
 
-{
+{  "status": "ok",
+"status_message": "Query was successful", 
+"data":{
+  "count":1,
+  "number":1,   
   "BannerTitle" : [
       {"text": "유튜버 웹보이"},
       {"desc": "더 다양한 강의는 유튜블 통해 제공하고 있습니다."},
@@ -8,4 +12,4 @@
       {"sub":"배너 영역01"}
     ]
     }
-  
+}

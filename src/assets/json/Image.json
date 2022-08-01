@@ -1,6 +1,12 @@
 
 
-{"ImageText" : [
+{ "status": "ok",
+"status_message": "Query was successful", 
+"data":{
+  "count":1,
+  "number":1,  
+    
+    "ImageText" : [
   {
    "title": "애교만점 웰시코기",
     "desc": "제목은 넥슨 풋볼 고딕 폰트입니다.<br/> 설명부분은 넥슨 LV1 고딕 16px 140% 입니다.",
@@ -12,4 +18,5 @@
     "image": "img/image_bg02.jpg"
 }
 ]
+}
 }

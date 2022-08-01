@@ -1,5 +1,9 @@
 
-{
+{"status": "ok",
+"status_message": "Query was successful", 
+"data":{
+  "count":1,
+  "number":1,   
   "cardText": [
     {
       "title": "웹표준 사이트 만들기1",
@@ -19,4 +23,5 @@
       "image": "img/card_bg03.jpg"
     }
   ]
+}
 }

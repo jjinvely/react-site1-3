@@ -4,7 +4,7 @@ import Contents from '../layout/Contents';
 import SliderCont from '../includes/SliderCont';
 
 function Slider() {
-  const [sliders, setsliders] = useState([]);
+  const [sliders, setSliders] = useState([]);
 
   useEffect(()=>{
     const requestOption ={
@@ -15,8 +15,8 @@ function Slider() {
       "https://raw.githubusercontent.com/jjinvely/react-site1-3/main/src/assets/json/Slider.json",requestOption
     )
     .then((response) => response.json())
-    .then((result) => {console.log(result);})
-    .then((result) => {setsliders(result.data.sliders)})
+    // .then((result) => {console.log(result);})
+    .then((result) => {setSliders(result.data.sliders)})
     .then((error) => console.log("error", error))
 }, []);
 
