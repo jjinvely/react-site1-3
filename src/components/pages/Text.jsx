@@ -5,7 +5,6 @@ import Footer from '../layout/Footer';
 
 
 
-
 function Text() {
   const [textText, setText] = useState([]);
 
